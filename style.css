@@ -249,7 +249,7 @@ a {
     padding-right: 0px;
 }
 .map_title {
-    margin-bottom: 109px;
+    margin-bottom: 50px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -579,4 +579,16 @@ a {
             align-items: center;
         }
     }
+
+    @media (max-width: 424px) {
+        .center {
+            padding-left: calc(50% - 177px);
+            padding-right: calc(50% - 177px);
+        }
+
+        .links {
+            gap: 25px;
+        }
+    }
+
 }
