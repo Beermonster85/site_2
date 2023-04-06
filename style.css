@@ -1,17 +1,17 @@
 * {
-    margin:0px;
+    margin: 0px;
     padding: 0px;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 img {
     max-width: 100%;
 }
 .container_main {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 a {
     text-decoration: none;
@@ -20,6 +20,7 @@ a {
     padding-left: calc(50% - 696px);
     padding-right: calc(50% - 696px);
 }
+
 .first_page {
     padding-top: 30px;
     padding-bottom: 511px;
@@ -29,7 +30,6 @@ a {
     background-size: cover;
 }
 
-
 .main_menu {
     display: flex;
     flex-wrap: wrap;
@@ -38,14 +38,28 @@ a {
     align-items: center;
 }
 
+.main_menu {
+    display: none;
+}
+
+.bg-dark {
+    background-color: #0000007d !important;
+}
+
+.navbar-dark {
+    --bs-navbar-color: #fff;
+    --bs-navbar-hover-color: #f6fb01;
+    --bs-navbar-disabled-color: #f6fb01;
+    --bs-navbar-active-color: #f6fb01;
+    --bs-navbar-brand-color: #f6fb01;
+    --bs-navbar-brand-hover-color: #f6fb01;
+    --bs-navbar-toggler-border-color: #f6fb01;
+    --bs-navbar-toggler-icon-bg: url(https://i.postimg.cc/Kz3t59rJ/Group-63.png);
+}
 
 .main_style {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
+    line-height: 30px;
+    color: #ffffff;
     transition: 0.5s;
 }
 .main_style:hover {
@@ -53,38 +67,88 @@ a {
     transform: scale(1.1);
 }
 .call_style {
-    display: block;
-    background-color: #F6FB01;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #f6fb01;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 14px;
     padding-bottom: 14px;
     border-radius: 6px;
     color: #000000;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    letter-spacing: 0.3px; 
+    letter-spacing: 0.3px;
     transition: 0.5s;
 }
-.call_style:hover {
-    color: rgb(241, 64, 64);
-    transform: scale(1.1);
+
+@keyframes vibrate-3 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    10% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    20% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    30% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    50% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    70% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    90% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
 }
+
+.call_style:hover {
+    background-color: rgb(241, 64, 64);
+    animation: vibrate-3 0.5s linear infinite both;
+}
+
 .main_slogan {
     margin-top: 258px;
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
     letter-spacing: 1px;
-    color: #FFFFFF;
+    color: #ffffff;
     flex-direction: row;
     justify-content: center;
 }
@@ -102,7 +166,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -119,7 +183,7 @@ a {
 .screens_adaptive {
     margin-top: 22px;
     width: 240px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -135,7 +199,7 @@ a {
 .conditions_title {
     display: flex;
     flex-direction: row;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -152,7 +216,7 @@ a {
 }
 .software {
     width: 670px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -169,7 +233,7 @@ a {
 }
 .variants_placement {
     width: 670px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -186,7 +250,7 @@ a {
 }
 .map_title {
     margin-bottom: 109px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -202,25 +266,25 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #A10D40;
+    background-color: #a10d40;
     gap: 250px;
 }
 .tel {
     width: 302px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 34px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .tel_number {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 34px;
-    color: #FFFFFF;
+    color: #ffffff;
     transition: 0.5s;
 }
 .tel_number:hover {
@@ -235,10 +299,9 @@ a {
 }
 
 @media (max-width: 1400px) {
-
     .center {
-    padding-left: calc(50% - 676px);
-    padding-right: calc(50% - 676px);
+        padding-left: calc(50% - 676px);
+        padding-right: calc(50% - 676px);
     }
 
     .ten_screens {
@@ -257,288 +320,263 @@ a {
         padding-right: 0px;
     }
 
-@media (max-width: 1370px) {
-
-    .center {
-    padding-left: calc(50% - 502px);
-    padding-right: calc(50% - 502px);
-    }
-
-    .ten_screens {
-        gap: 25px;
-        margin-top: 100px;
-    }
-
-    .screens_adaptive {
-        margin-top: 10px;
-    }
-
-    .screens_description {
-        justify-content: center;
-        margin-top: 100px;
-    }
-
-    .variants {
-        margin-top: 70px;
-        justify-content: center;
-    }
-
-    .map_location {
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 100px;
-    }
-
-    .links {
-        gap: 90px;
-    }
-
-    .software {
-        width: 702px;
-    }
-    
-    .variants_placement {
-        width: 702px;
-    }
-
-    .middle_content {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .сonditions {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .map_title {
-        margin-bottom: 100px;
-    }
-
-}
-
-@media (max-width: 1000px) {
-
-    .center {
-        padding-left: calc(50% - 374px);
-        padding-right: calc(50% - 374px);
-        }
-   
-    .call_style {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 18px;
-        line-height: 16px;
-}
-
-.screens_adaptive {
-    margin-top: 5px;
-}
-
-    .main_style {
-        font-size: 18px;
-}
-
-    .main_slogan {
-       font-size: 45px;
-       line-height: 60px;
-}
-
-    .middle_content {
-       padding-top: 70px;
-       padding-bottom: 70px;
-}
-
-    .ten_screens {
-       margin-top: 70px;
-}
-
-    .сonditions {
-       padding-top: 70px;
-       padding-bottom: 70px;
-}
-
-    .screens_description {
-       margin-top: 70px;
-}
-
-    .map_location {
-        padding-top: 70px;
-}
-
-    .map_title {
-        margin-bottom: 70px;
-}
-
-    .map_location {
-        padding-left: 0px;
-        padding-right: 0px;
-}
-
-    .links {
-        justify-content: center;
-    }
-
-}
-
-@media (max-width: 767px) {
-
-    .center {
-        padding-left: calc(50% - 192px);
-        padding-right: calc(50% - 193px);
+    @media (max-width: 1370px) {
+        .center {
+            padding-left: calc(50% - 502px);
+            padding-right: calc(50% - 502px);
         }
 
-    .call_style { 
-        display: none;
-        }
-         
-    .screens_adaptive {
-        margin-top: 0px;
-        }
-        
-    .main_menu {
-        justify-content: space-around;
-        }        
-
-    .main_style>span {
-        display: none;
+        .ten_screens {
+            gap: 25px;
+            margin-top: 100px;
         }
 
-    .Mockup {
-        display: none;
+        .screens_adaptive {
+            margin-top: 10px;
+        }
+
+        .screens_description {
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .variants {
+            margin-top: 70px;
+            justify-content: center;
+        }
+
+        .map_location {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 100px;
+        }
+
+        .links {
+            gap: 90px;
+        }
+
+        .software {
+            width: 702px;
+        }
+
+        .variants_placement {
+            width: 702px;
+        }
+
+        .middle_content {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .сonditions {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .map_title {
+            margin-bottom: 100px;
+        }
     }
 
-    .main_style {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 17px;
-    }
-
-    .main_slogan {
-        font-size: 30px;
-        line-height: 40px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 24px;
+    @media (max-width: 1000px) {
+        .center {
+            padding-left: calc(50% - 374px);
+            padding-right: calc(50% - 374px);
         }
 
-.middle_content {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+        .call_style {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            line-height: 16px;
+        }
 
-.ten_screens {
-    margin-top: 30px;
-}
+        .screens_adaptive {
+            margin-top: 5px;
+        }
 
-.сonditions {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+        .main_slogan {
+            font-size: 45px;
+            line-height: 60px;
+        }
 
-.screens_description {
-    margin-top: 30px;
-}
+        .middle_content {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
 
-.software {
-    font-size: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-}
+        .ten_screens {
+            margin-top: 70px;
+        }
 
-.variants_placement {
-    font-size: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-}
+        .сonditions {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
 
-.map_location {
-    padding-top: 30px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
+        .screens_description {
+            margin-top: 70px;
+        }
 
-.map_title {
-    margin-bottom: 30px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-}
+        .map_location {
+            padding-top: 70px;
+        }
 
-.tel {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    width: 165px;
-}
+        .map_title {
+            margin-bottom: 70px;
+        }
 
-.tel_number {
-    line-height: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-}
+        .map_location {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
-.screens_title {
-    font-size: 30px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-}
+        .links {
+            justify-content: center;
+        }
+    }
 
-.conditions_title {
-    font-size: 30px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-}
+    @media (max-width: 767px) {
+        .center {
+            padding-left: calc(50% - 192px);
+            padding-right: calc(50% - 193px);
+        }
 
-.screens_adaptive {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.1px;
-}
+        .screens_adaptive {
+            margin-top: 0px;
+        }
 
-.social_media {
-    gap: 23px;
-}
+        .main_menu {
+            justify-content: space-around;
+        }
 
-.Mockup_master {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-}
+        .Mockup {
+            display: none;
+        }
 
-.first_page {
-    padding-top: 50px;
-    padding-bottom: 490px;
-}
+        .main_slogan {
+            font-size: 30px;
+            line-height: 40px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+        }
 
-.links {
-    gap: 33px;
-    justify-content: center;
-    align-items: center
-}
-}
+        .middle_content {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .ten_screens {
+            margin-top: 30px;
+        }
+
+        .сonditions {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .screens_description {
+            margin-top: 30px;
+        }
+
+        .software {
+            font-size: 20px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .variants_placement {
+            font-size: 20px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .map_location {
+            padding-top: 30px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .map_title {
+            margin-bottom: 30px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .tel {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            width: 165px;
+        }
+
+        .tel_number {
+            line-height: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .screens_title {
+            font-size: 30px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .conditions_title {
+            font-size: 30px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .screens_adaptive {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.1px;
+        }
+
+        .social_media {
+            gap: 23px;
+        }
+
+        .Mockup_master {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .first_page {
+            padding-top: 50px;
+            padding-bottom: 490px;
+        }
+
+        .links {
+            gap: 33px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
